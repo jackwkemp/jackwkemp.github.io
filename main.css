@@ -9,195 +9,113 @@ body {background-color: rgb(250, 250, 250)}
   z-index: +1;
 }
 
-.div1 {
-    background-color: lightblue;    
-    text-align: center;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
   
   /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-    border-style: solid;
-    border-color:rgb(250, 250, 250);
-    border-width: 5px;
-    position: relative;
-  }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border-style: solid;
+  border-color:rgb(250, 250, 250);
+  border-width: 5px;
+  position: relative;
+}
 
  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  h1 {
-    color: rgb(5, 5, 5);
-    font-family: Helvetica;
-    font-size: 300%;
-    margin-top: 50px;
-  }
-
-  h2 {
-    color: rgb(5, 5, 5);
-    font-family: Helvetica;
-    text-align: center;
-    font-size: 150%;
-    margin-left: 10px;
-    margin-right: 10px;
-
-  }
-
-  p {
-    color: rgb(5, 5, 5);
-    font-family: Helvetica;
-    font-size: 90%;
-  }
-  
-  .fa {
-    padding: 30px;
-    font-size: 40px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-github {
-    color: rgb(5, 5, 5);
-  }
-  
-  .fa-linkedin {
-    color: rgb(5, 5, 5);
-  }
-
-  a {
-    text-align:center;
-    text-decoration: none;
-    color: rgb(5, 5, 5);
-    font-family: Helvetica;
-    font-size: 80%;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 910px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-  .button {
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    
-  }
-
-
-
-
-
-
-
-
-  #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    position: absolute; right: 0; bottom: 0;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#myImg:hover {
-    opacity: 0.7;
+h1 {
+  color: rgb(5, 5, 5);
+  font-family: Helvetica;
+  font-size: 300%;
+  margin-top: 50px;
 }
 
-/* The Modal (background) */
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
+h2 {
+  color: rgb(5, 5, 5);
+  font-family: Helvetica;
+  /* text-align: center; */
+  font-size: 150%;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+p {
+  color: rgb(5, 5, 5);
+  font-family: Helvetica;
+  font-size: 90%;
+  margin-left: 10px;
+}
+  
+/* controls the settings for LinkedIn + Github */
+.fa {
+  padding: 30px;
+  font-size: 40px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+  
+.fa:hover {
+  opacity: 0.7;
+}
+  
+.fa-github {
+  color: rgb(5, 5, 5);
+}
+  
+.fa-linkedin {
+  color: rgb(5, 5, 5);
+}
+
+a {
+  text-align:center;
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 910px) {
+  .column {
     width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+  }
 }
 
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+/* "About" button only at the moment */
+.button {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
 }
 
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+
+/* Project 1 Demo Gif */
+#myImgP1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute; right: 0; bottom: 0;
 }
 
-/* Add Animation */
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+#myImgP1:hover {
+    opacity: 0.7;
 }
 
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
-/* The Close Button */
-.close {
+/* Project 1's Close Button */
+.closeP1 {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -207,17 +125,184 @@ body {background-color: rgb(250, 250, 250)}
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.closeP1:hover,
+.closeP1:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 
+/* Project 2 Demo Gif */
+#myImgP2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute; right: 0; bottom: 0;
+}
+
+#myImgP2:hover {
+    opacity: 0.7;
+}
+
+/* Project 2's Close Button */
+.closeP2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closeP2:hover,
+.closeP2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Project 3 Demo Gif */
+#myImgP3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute; right: 0; bottom: 0;
+}
+
+#myImgP3:hover {
+    opacity: 0.7;
+}
+
+/* Project 3's Close Button */
+.closeP3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closeP3:hover,
+.closeP3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Project 4 Demo Gif */
+#myImgP4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute; right: 0; bottom: 0;
+}
+
+#myImgP3:hover {
+    opacity: 0.7;
+}
+
+/* Project 4's Close Button */
+.closeP4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closeP4:hover,
+.closeP4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Communal Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Communal Modal Content (image) */
+.modal-content {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+}
+
+/* Communal Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-family: Helvetica;
+}
+
+/* Communal Modal Add Animation */
+.modal-content,
+#caption {
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+      -webkit-transform: scale(0)
+  }
+
+  to {
+      -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+      transform: scale(0)
+  }
+
+  to {
+      transform: scale(1)
+  }
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
+  .modal-content {
+      width: 100%;
+  }
 }
+
+
 
