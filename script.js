@@ -95,3 +95,36 @@ span.onclick = function () {
     modal.style.display = "none";
 }
 
+//////////////////////////////////////////
+
+function openNavP1() {
+    document.getElementById("myNavP1").style.width = "100%";
+}
+
+function closeNavP1() {
+    document.getElementById("myNavP1").style.width = "0%";
+}
+
+function openNavP2() {
+    document.getElementById("myNavP2").style.width = "100%";
+}
+
+function closeNavP2() {
+    document.getElementById("myNavP2").style.width = "0%";
+}
+
+function openNavP3() {
+    document.getElementById("myNavP3").style.width = "100%";
+}
+
+function closeNavP3() {
+    document.getElementById("myNavP3").style.width = "0%";
+}
+
+function openNavP4() {
+    document.getElementById("myNavP4").style.width = "100%";
+}
+
+function closeNavP4() {
+    document.getElementById("myNavP4").style.width = "0%";
+}
